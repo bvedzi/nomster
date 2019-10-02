@@ -49,27 +49,27 @@ body {
     float: left;
     margin-right: 1px;
   }
-  .disabled {
+.disabled {
     color: #999999;
     border: 1px solid #dddddd;
   }
-  .current {
+.current {
     font-style: normal;
     font-weight: bold;
     background: #2e6ab1;
     color: white;
     border: 1px solid #2e6ab1;
   }
-  a {
+a {
     text-decoration: none;
     color: #105cb6;
     border: 1px solid #9aafe5;
     &:hover, &:focus {
-      color: #000033;
-      border-color: #000033;
-    }
+    color: #000033;
+    border-color: #000033;
   }
-  .page_info {
+}
+.page_info {
     background: #2e6ab1;
     color: white;
     padding: 0.4em 0.6em;
@@ -81,6 +81,28 @@ body {
       background: #2e6ab1 + 60;
       padding: 0.1em 0.25em;
     }
+
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
 
   .invalid-feedback {
    color: #ff3333;
